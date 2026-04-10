@@ -1,7 +1,8 @@
 """Config flow for veolia integration."""
 
-import aiohttp
 from urllib.parse import urlparse
+
+import aiohttp
 from veolia_api import VeoliaAPI
 from veolia_api.exceptions import VeoliaAPIAuthError, VeoliaAPIInvalidCredentialsError
 from veolia_api.portals import VEOLIA_PORTAL_CLIENTS

@@ -111,18 +111,18 @@ https://prd-ael-sirius-refcommunes.istefr.fr/communes-nationales?q=VOTRE_CODE_PO
 
 Dans le résultat JSON, cherchez votre commune et examinez le champ `type_commune` :
 
-| Valeur `type_commune` | Éligibilité |
-| --------------------- | ----------- |
-| `NON_REDIRIGE` | ✅ Compatible — portail `eau.veolia.fr` |
-| `REDIRIGE` (hostname connu) | ✅ Compatible — portail alternatif supporté |
+| Valeur `type_commune`         | Éligibilité                                  |
+| ----------------------------- | -------------------------------------------- |
+| `NON_REDIRIGE`                | ✅ Compatible — portail `eau.veolia.fr`      |
+| `REDIRIGE` (hostname connu)   | ✅ Compatible — portail alternatif supporté  |
 | `REDIRIGE` (hostname inconnu) | ❌ Non supporté — portail non encore intégré |
-| `NON_DESSERVIE` | ❌ Veolia ne dessert pas cette commune |
+| `NON_DESSERVIE`               | ❌ Veolia ne dessert pas cette commune       |
 
 # Portails Veolia supportés (04/2026)
 
-| Hostname | Description |
-| ------ | ----------- |
-| `eau.veolia.fr` | Veolia France (national) |
+| Hostname                          | Description               |
+| --------------------------------- | ------------------------- |
+| `eau.veolia.fr`                   | Veolia France (national)  |
 | `eaudetm.monespace.eau.veolia.fr` | Eau de Toulouse Métropole |
 
 Votre portail n'est pas géré? Voir [CONTRIBUTING.md](https://github.com/Jezza34000/veolia-api/blob/main/CONTRIBUTING.md#adding-a-portal)
