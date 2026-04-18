@@ -4,7 +4,7 @@ from urllib.parse import urlparse
 
 import aiohttp
 from veolia_api import VeoliaAPI
-from veolia_api.exceptions import VeoliaAPIAuthError, VeoliaAPIInvalidCredentialsError
+from veolia_api.exceptions import VeoliaAPIInvalidCredentialsError
 from veolia_api.portals import VEOLIA_PORTAL_CLIENTS
 import voluptuous as vol
 
@@ -111,7 +111,7 @@ class VeoliaFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
                         title=user_input[CONF_USERNAME],
                         data={**user_input, CONF_PORTAL_URL: self._portal_url},
                     )
-            except (VeoliaAPIAuthError, VeoliaAPIInvalidCredentialsError):
+            except VeoliaAPIInvalidCredentialsError:
                 self._errors["base"] = "invalid_credentials"
             except Exception:  # noqa: BLE001
                 LOGGER.debug("Unknown exception")
