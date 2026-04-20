@@ -21,6 +21,9 @@
 > ### UNIQUEMENT compatible avec le nouveau site de Veolia : https://www.eau.veolia.fr/
 >
 > ### N'est PAS compatible avec les sous domaines suivant : https://service.eau.veolia.fr & https://espace-client.vedif.eau.veolia.fr
+>
+> ### Vérifiez la compatibilité de votre commune : https://prd-ael-sirius-refcommunes.istefr.fr/communes-nationales?q=VOTRE_CODE_POSTAL
+> Les communes de type `NON_REDIRIGE` et `REDIRIGE` sont supportées (ex : https://eaudetm.monespace.eau.veolia.fr).
 
 ---
 

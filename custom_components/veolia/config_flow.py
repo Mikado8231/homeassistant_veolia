@@ -50,7 +50,7 @@ class VeoliaFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
                 ),
                 None,
             )
-            if selected_commune["type_commune"] == "NON_REDIRIGE":
+            if selected_commune["type_commune"] in ("NON_REDIRIGE", "REDIRIGE"):
                 return await self.async_step_credentials()
 
             if selected_commune["type_commune"] == "NON_DESSERVIE":
